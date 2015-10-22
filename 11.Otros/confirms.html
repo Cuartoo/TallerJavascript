@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+       
+        <p>Clic en ejecutar para lanzar una ventana de confirmacion.</p>
+        <button onclick="miFuncion()">Ejecutar</button>
+        <p id="demo"></p>
+        <script>
+            function miFuncion() {
+                var x;
+                var r = confirm("Presione una opción!");
+                if (r == true) {
+                    x = "Usted presiono OK!";
+                } else {
+                    x = "Usted presiono Cancel!";
+                }
+            
+            
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+    </body>
+
+</html>

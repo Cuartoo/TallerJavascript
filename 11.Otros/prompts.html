@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>    
+    <body>
+        <p>Clic en ejecutar para demostrar el uso de prompts.</p>
+        <button onclick="miFuncion()">Ejecutar</button>
+        <p id="demo"></p>
+        <script>
+            function miFuncion() {
+                var x;
+
+                var person = prompt("Por favor capture su nombre", "Juanito Perez");
+
+                if (person != null) {
+                    x = "Hola " + person + "! como te ha hido hoy?";
+                    document.getElementById("demo").innerHTML = x;
+                }
+            }
+        </script>
+    </body>
+
+</html>
